@@ -15,12 +15,3 @@ ipykernel
 
 # Optional but useful
 scikit-learn
-
-pdfplumber
-fitz
-sentence_transformers
-torch
-
-matplotlib
-langchain
-langchain-openai
