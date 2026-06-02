@@ -1,17 +1,10 @@
-# Core
 streamlit
 pandas
 numpy
-
-# NLP
-spacy
-
-# PDF Processing
-PyPDF2
-
-# Jupyter Notebook Support
-notebook
-ipykernel
-
-# Optional but useful
 scikit-learn
+langchain
+PyMuPDF
+python-dotenv
+sentence-transformers
+faiss-cpu
+openai
