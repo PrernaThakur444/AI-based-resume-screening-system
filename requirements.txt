@@ -1,0 +1,26 @@
+# Core
+streamlit
+pandas
+numpy
+
+# NLP
+spacy
+
+# PDF Processing
+PyPDF2
+
+# Jupyter Notebook Support
+notebook
+ipykernel
+
+# Optional but useful
+scikit-learn
+
+pdfplumber
+fitz
+sentence_transformers
+torch
+
+matplotlib
+langchain
+langchain-openai
