@@ -115,53 +115,6 @@ def extract_education(text):
         "PhD": r"\b(phd|doctorate)\b"
     }
 
-    # ---------- FUNCTION TO EXTRACT % ----------
-    # def get_percentage(line):
-    #     perc = re.search(r"([4-9]\d(?:\.\d{1,2})?)\s?%", line)
-    #     cgpa = re.search(r"(cgpa|gpa)[^\d]*(\d\.\d{1,2})", line)
-
-    #     if perc:
-    #         return float(perc.group(1))
-
-    #     if cgpa:
-    #         val = float(cgpa.group(2))
-    #         return round((val / 10) * 100, 2)
-
-    #     # standalone CGPA like "7.9"
-    #     cgpa2 = re.search(r"\b([5-9]\.\d{1,2})\b", line)
-    #     if cgpa2:
-    #         val = float(cgpa2.group(1))
-    #         return round((val / 10) * 100, 2)
-
-    #     return None
-
-    # # ---------- MAIN LOGIC ----------
-    # for i, line in enumerate(lines):
-
-    #     for degree, pattern in degree_patterns.items():
-
-    #         if re.search(pattern, line):
-
-    #             percentage = get_percentage(line)
-
-    #             # 🔥 Look only next 2 lines (strict)
-    #             if percentage is None:
-    #                 for j in range(1, 3):
-    #                     if i + j >= len(lines):
-    #                         break
-
-    #                     next_line = lines[i + j]
-
-    #                     # stop if next degree starts
-    #                     if any(re.search(pat, next_line) for pat in degree_patterns.values()):
-    #                         break
-
-    #                     percentage = get_percentage(next_line)
-    #                     if percentage is not None:
-    #                         break
-
-    #             if percentage is None:
-    #                 percentage = "N/A"
   
 
     def get_percentage_block(lines, i, degree_patterns):
