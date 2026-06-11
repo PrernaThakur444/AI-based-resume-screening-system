@@ -1391,6 +1391,35 @@ if not st.session_state.logged_in:
         overflow: hidden;
     }
 
+
+    /* -----------------------------
+        ADD THIS AT THE BOTTOM
+    ------------------------------ */
+
+    /* Download button text fix */
+    .stDownloadButton > button {
+        color: white !important;
+    }
+
+    /* Uploaded file text */
+    [data-testid="stFileUploaderFileName"] {
+        color: white !important;
+    }
+
+    /* Light mode support */
+    @media (prefers-color-scheme: light) {
+
+        .stDownloadButton > button {
+            color: black !important;
+            background-color: #dbeafe !important;
+        }
+
+        [data-testid="stFileUploaderFileName"] {
+            color: black !important;
+        }
+    }
+
+
     </style>
     """, unsafe_allow_html=True)
 
