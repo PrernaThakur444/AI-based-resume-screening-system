@@ -1147,84 +1147,253 @@ if not st.session_state.logged_in:
     # LOGIN CSS
     # =================================================
 
+    # st.markdown("""
+    # <style>
+
+    # .stApp {
+    #     background-color: #020617;
+    # }
+
+    # .auth-container {
+
+    #     background: #111827;
+
+    #     padding: 45px;
+
+    #     border-radius: 20px;
+
+    #     border: 1px solid #334155;
+
+    #     margin-top: 60px;
+
+    #     box-shadow: 0px 4px 30px rgba(0,0,0,0.4);
+    # }
+
+    # .auth-title {
+
+    #     text-align: center;
+
+    #     font-size: 42px;
+
+    #     font-weight: bold;
+
+    #     color: white;
+
+    #     margin-bottom: 10px;
+    # }
+
+    # .auth-subtitle {
+
+    #     text-align: center;
+
+    #     color: #94a3b8;
+
+    #     margin-bottom: 30px;
+
+    #     font-size: 16px;
+    # }
+
+    # div.stButton > button {
+
+    #     background: linear-gradient(
+    #         90deg,
+    #         #2563eb,
+    #         #38bdf8
+    #     );
+
+    #     color: white;
+
+    #     border-radius: 12px;
+
+    #     height: 50px;
+
+    #     font-size: 18px;
+
+    #     font-weight: bold;
+
+    #     border: none;
+    # }
+
+    # div.stButton > button:hover {
+
+    #     background: linear-gradient(
+    #         90deg,
+    #         #1d4ed8,
+    #         #0ea5e9
+    #     );
+    # }
+
+    # </style>
+    # """, unsafe_allow_html=True)
+
+
+
     st.markdown("""
     <style>
 
+    /* =========================
+        GLOBAL APP STYLING
+    ========================= */
+
+    html, body, [class*="css"] {
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Main App Background */
     .stApp {
-        background-color: #020617;
-    }
-
-    .auth-container {
-
-        background: #111827;
-
-        padding: 45px;
-
-        border-radius: 20px;
-
-        border: 1px solid #334155;
-
-        margin-top: 60px;
-
-        box-shadow: 0px 4px 30px rgba(0,0,0,0.4);
-    }
-
-    .auth-title {
-
-        text-align: center;
-
-        font-size: 42px;
-
-        font-weight: bold;
-
+        background: linear-gradient(to bottom right, #0b1026, #101935);
         color: white;
-
-        margin-bottom: 10px;
     }
 
-    .auth-subtitle {
+    /* =========================
+        LIGHT MODE SUPPORT
+    ========================= */
 
-        text-align: center;
+    @media (prefers-color-scheme: light) {
 
-        color: #94a3b8;
+        .stApp {
+            background: #f4f6fb !important;
+            color: #111111 !important;
+        }
 
-        margin-bottom: 30px;
+        h1, h2, h3, h4, h5, h6,
+        p, span, label, div {
+            color: #111111 !important;
+        }
 
-        font-size: 16px;
+        /* Cards / Containers */
+        .block-container,
+        div[data-testid="stVerticalBlock"] {
+            background-color: #ffffff !important;
+            color: #111111 !important;
+            border-radius: 12px;
+        }
+
+        /* Input Fields */
+        .stTextInput input,
+        .stTextArea textarea,
+        .stSelectbox div,
+        .stNumberInput input {
+            background-color: #ffffff !important;
+            color: #111111 !important;
+            border: 1px solid #cccccc !important;
+        }
+
+        /* Tables */
+        table {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        thead tr th {
+            background-color: #dbe4ff !important;
+            color: black !important;
+        }
+
+        tbody tr td {
+            color: black !important;
+        }
+
+        /* Buttons */
+        .stButton > button {
+            background: linear-gradient(90deg, #4a6cf7, #5cb8ff);
+            color: white !important;
+            border: none;
+            border-radius: 10px;
+        }
     }
 
-    div.stButton > button {
+    /* =========================
+        DARK MODE SUPPORT
+    ========================= */
 
-        background: linear-gradient(
-            90deg,
-            #2563eb,
-            #38bdf8
-        );
+    @media (prefers-color-scheme: dark) {
 
-        color: white;
+        .stApp {
+            background: linear-gradient(to bottom right, #050816, #0b1026);
+            color: white !important;
+        }
 
-        border-radius: 12px;
+        h1, h2, h3, h4, h5, h6,
+        p, span, label, div {
+            color: white !important;
+        }
+    
 
-        height: 50px;
+        /* Cards / Containers */
+        .block-container,
+        div[data-testid="stVerticalBlock"] {
+            background-color: #111827 !important;
+            color: white !important;
+            border-radius: 12px;
+        }
 
-        font-size: 18px;
+        /* Input Fields */
+        .stTextInput input,
+        .stTextArea textarea,
+        .stSelectbox div,
+        .stNumberInput input {
+            background-color: #1f2937 !important;
+            color: white !important;
+            border: 1px solid #374151 !important;
+        }
 
-        font-weight: bold;
+        /* Tables */
+        table {
+            background-color: #111827 !important;
+            color: white !important;
+        }
 
-        border: none;
+        thead tr th {
+            background-color: #1f2937 !important;
+            color: white !important;
+        }
+
+        tbody tr td {
+            color: white !important;
+        }
+
+        /* Buttons */
+        .stButton > button {
+            background: linear-gradient(90deg, #4a6cf7, #5cb8ff);
+            color: white !important;
+            border: none;
+            border-radius: 10px;
+        }
     }
 
-    div.stButton > button:hover {
+    /* =========================
+        SIDEBAR
+    ========================= */
 
-        background: linear-gradient(
-            90deg,
-            #1d4ed8,
-            #0ea5e9
-        );
+    section[data-testid="stSidebar"] {
+        background-color: #0f172a !important;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    /* =========================
+        SUCCESS / ERROR BOXES
+    ========================= */
+
+    .stAlert {
+        border-radius: 10px;
+    }
+
+    /* =========================
+        DATAFRAME
+    ========================= */
+
+    [data-testid="stDataFrame"] {
+        border-radius: 10px;
+        overflow: hidden;
     }
 
     </style>
     """, unsafe_allow_html=True)
+
 
     # =================================================
     # CENTER LOGIN BOX
