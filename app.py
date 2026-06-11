@@ -1228,207 +1228,12 @@ if not st.session_state.logged_in:
 
 
 
-    # st.markdown("""
-    # <style>
-
-    # /* =========================
-    #     GLOBAL APP STYLING
-    # ========================= */
-
-    # html, body, [class*="css"] {
-    #     font-family: 'Segoe UI', sans-serif;
-    # }
-
-    # /* Main App Background */
-    # .stApp {
-    #     background: linear-gradient(to bottom right, #0b1026, #101935);
-    #     color: white;
-    # }
-
-    # /* =========================
-    #     LIGHT MODE SUPPORT
-    # ========================= */
-
-    # @media (prefers-color-scheme: light) {
-
-    #     .stApp {
-    #         background: #f4f6fb !important;
-    #         color: #111111 !important;
-    #     }
-
-    #     h1, h2, h3, h4, h5, h6,
-    #     p, span, label, div {
-    #         color: #111111 !important;
-    #     }
-
-    #     /* Cards / Containers */
-    #     .block-container,
-    #     div[data-testid="stVerticalBlock"] {
-    #         background-color: #ffffff !important;
-    #         color: #111111 !important;
-    #         border-radius: 12px;
-    #     }
-
-    #     /* Input Fields */
-    #     .stTextInput input,
-    #     .stTextArea textarea,
-    #     .stSelectbox div,
-    #     .stNumberInput input {
-    #         background-color: #ffffff !important;
-    #         color: #111111 !important;
-    #         border: 1px solid #cccccc !important;
-    #     }
-
-    #     /* Tables */
-    #     table {
-    #         background-color: white !important;
-    #         color: black !important;
-    #     }
-
-    #     thead tr th {
-    #         background-color: #dbe4ff !important;
-    #         color: black !important;
-    #     }
-
-    #     tbody tr td {
-    #         color: black !important;
-    #     }
-
-    #     /* Buttons */
-    #     .stButton > button {
-    #         background: linear-gradient(90deg, #4a6cf7, #5cb8ff);
-    #         color: white !important;
-    #         border: none;
-    #         border-radius: 10px;
-    #     }
-    # }
-
-    # /* =========================
-    #     DARK MODE SUPPORT
-    # ========================= */
-
-    # @media (prefers-color-scheme: dark) {
-
-    #     .stApp {
-    #         background: linear-gradient(to bottom right, #050816, #0b1026);
-    #         color: white !important;
-    #     }
-
-    #     h1, h2, h3, h4, h5, h6,
-    #     p, span, label, div {
-    #         color: white !important;
-    #     }
-    
-
-    #     /* Cards / Containers */
-    #     .block-container,
-    #     div[data-testid="stVerticalBlock"] {
-    #         background-color: #111827 !important;
-    #         color: white !important;
-    #         border-radius: 12px;
-    #     }
-
-    #     /* Input Fields */
-    #     .stTextInput input,
-    #     .stTextArea textarea,
-    #     .stSelectbox div,
-    #     .stNumberInput input {
-    #         background-color: #1f2937 !important;
-    #         color: white !important;
-    #         border: 1px solid #374151 !important;
-    #     }
-
-    #     /* Tables */
-    #     table {
-    #         background-color: #111827 !important;
-    #         color: white !important;
-    #     }
-
-    #     thead tr th {
-    #         background-color: #1f2937 !important;
-    #         color: white !important;
-    #     }
-
-    #     tbody tr td {
-    #         color: white !important;
-    #     }
-
-    #     /* Buttons */
-    #     .stButton > button {
-    #         background: linear-gradient(90deg, #4a6cf7, #5cb8ff);
-    #         color: white !important;
-    #         border: none;
-    #         border-radius: 10px;
-    #     }
-    # }
-
-    # /* =========================
-    #     SIDEBAR
-    # ========================= */
-
-    # section[data-testid="stSidebar"] {
-    #     background-color: #0f172a !important;
-    # }
-
-    # section[data-testid="stSidebar"] * {
-    #     color: white !important;
-    # }
-
-    # /* =========================
-    #     SUCCESS / ERROR BOXES
-    # ========================= */
-
-    # .stAlert {
-    #     border-radius: 10px;
-    # }
-
-    # /* =========================
-    #     DATAFRAME
-    # ========================= */
-
-    # [data-testid="stDataFrame"] {
-    #     border-radius: 10px;
-    #     overflow: hidden;
-    # }
-
-
-    # /* -----------------------------
-    #     ADD THIS AT THE BOTTOM
-    # ------------------------------ */
-
-    # /* Download button text fix */
-    # .stDownloadButton > button {
-    #     color: white !important;
-    # }
-
-    # /* Uploaded file text */
-    # [data-testid="stFileUploaderFileName"] {
-    #     color: white !important;
-    # }
-
-    # /* Light mode support */
-    # @media (prefers-color-scheme: light) {
-
-    #     .stDownloadButton > button {
-    #         color: black !important;
-    #         background-color: #dbeafe !important;
-    #     }
-
-    #     [data-testid="stFileUploaderFileName"] {
-    #         color: black !important;
-    #     }
-    # }
-
-
-    # </style>
-    # """, unsafe_allow_html=True)
-  
     st.markdown("""
     <style>
 
-    /* =========================================
+    /* =========================
         GLOBAL APP STYLING
-    ========================================= */
+    ========================= */
 
     html, body, [class*="css"] {
         font-family: 'Segoe UI', sans-serif;
@@ -1436,192 +1241,42 @@ if not st.session_state.logged_in:
 
     /* Main App Background */
     .stApp {
-        background: linear-gradient(135deg, #020617, #0b1120);
+        background: linear-gradient(to bottom right, #0b1026, #101935);
         color: white;
     }
 
-    /* =========================================
-        HEADINGS
-    ========================================= */
-
-    h1, h2, h3, h4, h5, h6 {
-        color: #60a5fa !important;
-        font-weight: 700 !important;
-    }
-
-    /* =========================================
-        SIDEBAR
-    ========================================= */
-
-    section[data-testid="stSidebar"] {
-        background: #111827 !important;
-        color: white !important;
-    }
-
-    section[data-testid="stSidebar"] * {
-        color: white !important;
-    }
-
-    /* =========================================
-        INPUT FIELDS
-    ========================================= */
-
-    .stTextInput input,
-    .stTextArea textarea,
-    .stNumberInput input,
-    .stSelectbox div,
-    .stMultiSelect div {
-        background-color: #1e293b !important;
-        color: white !important;
-        border: 1px solid #334155 !important;
-        border-radius: 10px !important;
-    }
-
-    /* =========================================
-        BUTTONS
-    ========================================= */
-
-    .stButton button {
-        background: linear-gradient(90deg, #4f46e5, #38bdf8) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 12px !important;
-        padding: 0.6rem 1.2rem !important;
-        font-weight: 600 !important;
-        transition: 0.3s ease;
-    }
-
-    .stButton button:hover {
-        transform: scale(1.03);
-        background: linear-gradient(90deg, #2563eb, #0ea5e9) !important;
-    }
-
-    /* =========================================
-        DOWNLOAD BUTTON FIX
-    ========================================= */
-
-    .stDownloadButton button {
-        background: #1f2937 !important;
-        color: #ffffff !important;
-        border: 1px solid #3b82f6 !important;
-        border-radius: 10px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        padding: 0.5rem 1rem !important;
-    }
-
-    .stDownloadButton button:hover {
-        background: #2563eb !important;
-        color: white !important;
-    }
-
-    /* =========================================
-        FILE UPLOADER FIX
-    ========================================= */
-
-    /* Upload Box */
-    section[data-testid="stFileUploader"] {
-        background: rgba(255,255,255,0.05) !important;
-        border-radius: 12px !important;
-        padding: 10px !important;
-    }
-
-    /* Upload Text */
-    section[data-testid="stFileUploader"] * {
-        color: #ffffff !important;
-    }
-
-    /* Uploaded File Names */
-    [data-testid="stFileUploaderFileName"] {
-        color: #ffffff !important;
-        font-weight: 600 !important;
-    }
-
-    /* =========================================
-        DATAFRAMES / TABLES
-    ========================================= */
-
-    [data-testid="stDataFrame"] {
-        border-radius: 12px !important;
-        overflow: hidden;
-    }
-
-    table {
-        background-color: #111827 !important;
-        color: white !important;
-    }
-
-    thead tr th {
-        background-color: #1e293b !important;
-        color: #60a5fa !important;
-    }
-
-    /* =========================================
-        CARDS / CONTAINERS
-    ========================================= */
-
-    .candidate-card {
-        background: rgba(255,255,255,0.06);
-        padding: 20px;
-        border-radius: 16px;
-        border: 1px solid rgba(255,255,255,0.1);
-        margin-bottom: 20px;
-        color: white !important;
-    }
-
-    /* =========================================
-        SUCCESS / ERROR MESSAGES
-    ========================================= */
-
-    .stSuccess {
-        background-color: rgba(34,197,94,0.2) !important;
-        color: #4ade80 !important;
-        border-radius: 10px !important;
-    }
-
-    .stError {
-        background-color: rgba(239,68,68,0.2) !important;
-        color: #f87171 !important;
-        border-radius: 10px !important;
-    }
-
-    /* =========================================
-        METRICS
-    ========================================= */
-
-    [data-testid="metric-container"] {
-        background: rgba(255,255,255,0.05);
-        border-radius: 15px;
-        padding: 15px;
-        border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    /* =========================================
+    /* =========================
         LIGHT MODE SUPPORT
-    ========================================= */
+    ========================= */
 
     @media (prefers-color-scheme: light) {
 
-        /* Main Background */
         .stApp {
-            background: #f3f4f6 !important;
+            background: #f4f6fb !important;
             color: #111111 !important;
         }
 
-        /* Global Text */
-        html, body, [class*="css"] {
+        h1, h2, h3, h4, h5, h6,
+        p, span, label, div {
             color: #111111 !important;
         }
 
-        /* Inputs */
+        /* Cards / Containers */
+        .block-container,
+        div[data-testid="stVerticalBlock"] {
+            background-color: #ffffff !important;
+            color: #111111 !important;
+            border-radius: 12px;
+        }
+
+        /* Input Fields */
         .stTextInput input,
         .stTextArea textarea,
-        .stNumberInput input,
         .stSelectbox div,
-        .stMultiSelect div {
-            background-color: white !important;
-            color: black !important;
-            border: 1px solid #cbd5e1 !important;
+        .stNumberInput input {
+            background-color: #ffffff !important;
+            color: #111111 !important;
+            border: 1px solid #cccccc !important;
         }
 
         /* Tables */
@@ -1631,63 +1286,408 @@ if not st.session_state.logged_in:
         }
 
         thead tr th {
-            background-color: #dbeafe !important;
+            background-color: #dbe4ff !important;
             color: black !important;
-        
         }
 
-        /* Download Button */
-        .stDownloadButton button {
-            background: #dbeafe !important;
-            color: #000000 !important;
-            border: 1px solid #2563eb !important;
+        tbody tr td {
+            color: black !important;
         }
 
-        .stDownloadButton button:hover {
-            background: #2563eb !important;
+        /* Buttons */
+        .stButton > button {
+            background: linear-gradient(90deg, #4a6cf7, #5cb8ff);
+            color: white !important;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    /* =========================
+        DARK MODE SUPPORT
+    ========================= */
+
+    @media (prefers-color-scheme: dark) {
+
+        .stApp {
+            background: linear-gradient(to bottom right, #050816, #0b1026);
             color: white !important;
         }
 
-        /* File Upload */
-        section[data-testid="stFileUploader"] {
-            background: #ffffff !important;
-        }
-
-        section[data-testid="stFileUploader"] * {
-            color: #000000 !important;
-        }
-
-        [data-testid="stFileUploaderFileName"] {
-            color: #000000 !important;
+        h1, h2, h3, h4, h5, h6,
+        p, span, label, div {
+            color: white !important;
         }
     
 
-        /* Cards */
-        .candidate-card {
-            background: white !important;
+        /* Cards / Containers */
+        .block-container,
+        div[data-testid="stVerticalBlock"] {
+            background-color: #111827 !important;
+            color: white !important;
+            border-radius: 12px;
+        }
+
+        /* Input Fields */
+        .stTextInput input,
+        .stTextArea textarea,
+        .stSelectbox div,
+        .stNumberInput input {
+            background-color: #1f2937 !important;
+            color: white !important;
+            border: 1px solid #374151 !important;
+        }
+
+        /* Tables */
+        table {
+            background-color: #111827 !important;
+            color: white !important;
+        }
+
+        thead tr th {
+            background-color: #1f2937 !important;
+            color: white !important;
+        }
+
+        tbody tr td {
+            color: white !important;
+        }
+
+        /* Buttons */
+        .stButton > button {
+            background: linear-gradient(90deg, #4a6cf7, #5cb8ff);
+            color: white !important;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    /* =========================
+        SIDEBAR
+    ========================= */
+
+    section[data-testid="stSidebar"] {
+        background-color: #0f172a !important;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    /* =========================
+        SUCCESS / ERROR BOXES
+    ========================= */
+
+    .stAlert {
+        border-radius: 10px;
+    }
+
+    /* =========================
+        DATAFRAME
+    ========================= */
+
+    [data-testid="stDataFrame"] {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+
+    /* -----------------------------
+        ADD THIS AT THE BOTTOM
+    ------------------------------ */
+
+    /* Download button text fix */
+    .stDownloadButton > button {
+        color: white !important;
+    }
+
+    /* Uploaded file text */
+    [data-testid="stFileUploaderFileName"] {
+        color: white !important;
+    }
+
+    /* Light mode support */
+    @media (prefers-color-scheme: light) {
+
+        .stDownloadButton > button {
             color: black !important;
-            border: 1px solid #d1d5db !important;
+            background-color: #dbeafe !important;
         }
 
-        /* Metrics */
-        [data-testid="metric-container"] {
-            background: white !important;
-            color: black !important;
-            border: 1px solid #d1d5db !important;
-        }
-
-        /* Sidebar */
-        section[data-testid="stSidebar"] {
-            background: #e5e7eb !important;
-        }
-
-        section[data-testid="stSidebar"] * {
+        [data-testid="stFileUploaderFileName"] {
             color: black !important;
         }
     }
 
+
     </style>
     """, unsafe_allow_html=True)
+  
+    # st.markdown("""
+    # <style>
+
+    # /* =========================================
+    #     GLOBAL APP STYLING
+    # ========================================= */
+
+    # html, body, [class*="css"] {
+    #     font-family: 'Segoe UI', sans-serif;
+    # }
+
+    # /* Main App Background */
+    # .stApp {
+    #     background: linear-gradient(135deg, #020617, #0b1120);
+    #     color: white;
+    # }
+
+    # /* =========================================
+    #     HEADINGS
+    # ========================================= */
+
+    # h1, h2, h3, h4, h5, h6 {
+    #     color: #60a5fa !important;
+    #     font-weight: 700 !important;
+    # }
+
+    # /* =========================================
+    #     SIDEBAR
+    # ========================================= */
+
+    # section[data-testid="stSidebar"] {
+    #     background: #111827 !important;
+    #     color: white !important;
+    # }
+
+    # section[data-testid="stSidebar"] * {
+    #     color: white !important;
+    # }
+
+    # /* =========================================
+    #     INPUT FIELDS
+    # ========================================= */
+
+    # .stTextInput input,
+    # .stTextArea textarea,
+    # .stNumberInput input,
+    # .stSelectbox div,
+    # .stMultiSelect div {
+    #     background-color: #1e293b !important;
+    #     color: white !important;
+    #     border: 1px solid #334155 !important;
+    #     border-radius: 10px !important;
+    # }
+
+    # /* =========================================
+    #     BUTTONS
+    # ========================================= */
+
+    # .stButton button {
+    #     background: linear-gradient(90deg, #4f46e5, #38bdf8) !important;
+    #     color: white !important;
+    #     border: none !important;
+    #     border-radius: 12px !important;
+    #     padding: 0.6rem 1.2rem !important;
+    #     font-weight: 600 !important;
+    #     transition: 0.3s ease;
+    # }
+
+    # .stButton button:hover {
+    #     transform: scale(1.03);
+    #     background: linear-gradient(90deg, #2563eb, #0ea5e9) !important;
+    # }
+
+    # /* =========================================
+    #     DOWNLOAD BUTTON FIX
+    # ========================================= */
+
+    # .stDownloadButton button {
+    #     background: #1f2937 !important;
+    #     color: #ffffff !important;
+    #     border: 1px solid #3b82f6 !important;
+    #     border-radius: 10px !important;
+    #     font-size: 16px !important;
+    #     font-weight: 600 !important;
+    #     padding: 0.5rem 1rem !important;
+    # }
+
+    # .stDownloadButton button:hover {
+    #     background: #2563eb !important;
+    #     color: white !important;
+    # }
+
+    # /* =========================================
+    #     FILE UPLOADER FIX
+    # ========================================= */
+
+    # /* Upload Box */
+    # section[data-testid="stFileUploader"] {
+    #     background: rgba(255,255,255,0.05) !important;
+    #     border-radius: 12px !important;
+    #     padding: 10px !important;
+    # }
+
+    # /* Upload Text */
+    # section[data-testid="stFileUploader"] * {
+    #     color: #ffffff !important;
+    # }
+
+    # /* Uploaded File Names */
+    # [data-testid="stFileUploaderFileName"] {
+    #     color: #ffffff !important;
+    #     font-weight: 600 !important;
+    # }
+
+    # /* =========================================
+    #     DATAFRAMES / TABLES
+    # ========================================= */
+
+    # [data-testid="stDataFrame"] {
+    #     border-radius: 12px !important;
+    #     overflow: hidden;
+    # }
+
+    # table {
+    #     background-color: #111827 !important;
+    #     color: white !important;
+    # }
+
+    # thead tr th {
+    #     background-color: #1e293b !important;
+    #     color: #60a5fa !important;
+    # }
+
+    # /* =========================================
+    #     CARDS / CONTAINERS
+    # ========================================= */
+
+    # .candidate-card {
+    #     background: rgba(255,255,255,0.06);
+    #     padding: 20px;
+    #     border-radius: 16px;
+    #     border: 1px solid rgba(255,255,255,0.1);
+    #     margin-bottom: 20px;
+    #     color: white !important;
+    # }
+
+    # /* =========================================
+    #     SUCCESS / ERROR MESSAGES
+    # ========================================= */
+
+    # .stSuccess {
+    #     background-color: rgba(34,197,94,0.2) !important;
+    #     color: #4ade80 !important;
+    #     border-radius: 10px !important;
+    # }
+
+    # .stError {
+    #     background-color: rgba(239,68,68,0.2) !important;
+    #     color: #f87171 !important;
+    #     border-radius: 10px !important;
+    # }
+
+    # /* =========================================
+    #     METRICS
+    # ========================================= */
+
+    # [data-testid="metric-container"] {
+    #     background: rgba(255,255,255,0.05);
+    #     border-radius: 15px;
+    #     padding: 15px;
+    #     border: 1px solid rgba(255,255,255,0.1);
+    # }
+
+    # /* =========================================
+    #     LIGHT MODE SUPPORT
+    # ========================================= */
+
+    # @media (prefers-color-scheme: light) {
+
+    #     /* Main Background */
+    #     .stApp {
+    #         background: #f3f4f6 !important;
+    #         color: #111111 !important;
+    #     }
+
+    #     /* Global Text */
+    #     html, body, [class*="css"] {
+    #         color: #111111 !important;
+    #     }
+
+    #     /* Inputs */
+    #     .stTextInput input,
+    #     .stTextArea textarea,
+    #     .stNumberInput input,
+    #     .stSelectbox div,
+    #     .stMultiSelect div {
+    #         background-color: white !important;
+    #         color: black !important;
+    #         border: 1px solid #cbd5e1 !important;
+    #     }
+
+    #     /* Tables */
+    #     table {
+    #         background-color: white !important;
+    #         color: black !important;
+    #     }
+
+    #     thead tr th {
+    #         background-color: #dbeafe !important;
+    #         color: black !important;
+        
+    #     }
+
+    #     /* Download Button */
+    #     .stDownloadButton button {
+    #         background: #dbeafe !important;
+    #         color: #000000 !important;
+    #         border: 1px solid #2563eb !important;
+    #     }
+
+    #     .stDownloadButton button:hover {
+    #         background: #2563eb !important;
+    #         color: white !important;
+    #     }
+
+    #     /* File Upload */
+    #     section[data-testid="stFileUploader"] {
+    #         background: #ffffff !important;
+    #     }
+
+    #     section[data-testid="stFileUploader"] * {
+    #         color: #000000 !important;
+    #     }
+
+    #     [data-testid="stFileUploaderFileName"] {
+    #         color: #000000 !important;
+    #     }
+    
+
+    #     /* Cards */
+    #     .candidate-card {
+    #         background: white !important;
+    #         color: black !important;
+    #         border: 1px solid #d1d5db !important;
+    #     }
+
+    #     /* Metrics */
+    #     [data-testid="metric-container"] {
+    #         background: white !important;
+    #         color: black !important;
+    #         border: 1px solid #d1d5db !important;
+    #     }
+
+    #     /* Sidebar */
+    #     section[data-testid="stSidebar"] {
+    #         background: #e5e7eb !important;
+    #     }
+
+    #     section[data-testid="stSidebar"] * {
+    #         color: black !important;
+    #     }
+    # }
+
+    # </style>
+    # """, unsafe_allow_html=True)
 
     # =================================================
     # CENTER LOGIN BOX
@@ -1838,77 +1838,339 @@ with top2:
 # MAIN APP CSS
 # =====================================================
 
+# st.markdown("""
+# <style>
+
+# .stApp {
+#     background-color: #0f172a;
+#     color: white;
+# }
+
+# html, body, [class*="css"] {
+#     font-family: 'Segoe UI', sans-serif;
+# }
+
+# h1, h2, h3 {
+#     color: #38bdf8;
+#     font-weight: 700;
+# }
+
+# .stTextInput input {
+#     background-color: #1e293b;
+#     color: white;
+#     border-radius: 12px;
+#     border: 1px solid #334155;
+# }
+
+# .stTextArea textarea {
+#     background-color: #1e293b;
+#     color: white;
+#     border-radius: 12px;
+#     border: 1px solid #334155;
+# }
+
+# [data-testid="stFileUploader"] {
+#     background-color: #1e293b;
+#     border-radius: 12px;
+#     padding: 15px;
+#     border: 1px solid #334155;
+# }
+
+# .stButton > button {
+#     width: 100%;
+#     height: 50px;
+#     border-radius: 12px;
+#     border: none;
+#     background: linear-gradient(90deg, #2563eb, #38bdf8);
+#     color: white;
+#     font-size: 18px;
+#     font-weight: bold;
+# }
+
+# [data-testid="stMetric"] {
+#     background: linear-gradient(135deg, #1e293b, #111827);
+#     padding: 20px;
+#     border-radius: 16px;
+#     border: 1px solid #334155;
+# }
+
+# [data-testid="stMetricLabel"] {
+#     color: #cbd5e1 !important;
+#     font-size: 18px !important;
+# }
+
+# [data-testid="stMetricValue"] {
+#     color: #38bdf8 !important;
+#     font-size: 38px !important;
+#     font-weight: bold !important;
+# }
+
+# </style>
+# """, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 
-.stApp {
-    background-color: #0f172a;
-    color: white;
-}
+/* =========================================
+   GLOBAL APP STYLING
+========================================= */
 
 html, body, [class*="css"] {
     font-family: 'Segoe UI', sans-serif;
 }
 
-h1, h2, h3 {
-    color: #38bdf8;
-    font-weight: 700;
-}
-
-.stTextInput input {
-    background-color: #1e293b;
+/* Main App Background */
+.stApp {
+    background: linear-gradient(135deg, #020617, #0b1120);
     color: white;
-    border-radius: 12px;
-    border: 1px solid #334155;
 }
 
-.stTextArea textarea {
-    background-color: #1e293b;
-    color: white;
-    border-radius: 12px;
-    border: 1px solid #334155;
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #60a5fa !important;
+    font-weight: 700 !important;
 }
 
-[data-testid="stFileUploader"] {
-    background-color: #1e293b;
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid #334155;
+/* =========================================
+   SIDEBAR
+========================================= */
+
+section[data-testid="stSidebar"] {
+    background: #111827 !important;
+    color: white !important;
 }
 
-.stButton > button {
-    width: 100%;
-    height: 50px;
-    border-radius: 12px;
-    border: none;
-    background: linear-gradient(90deg, #2563eb, #38bdf8);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+section[data-testid="stSidebar"] * {
+    color: white !important;
 }
 
-[data-testid="stMetric"] {
-    background: linear-gradient(135deg, #1e293b, #111827);
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input,
+.stSelectbox div,
+.stMultiSelect div {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: 1px solid #334155 !important;
+    border-radius: 10px !important;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.stButton button {
+    background: linear-gradient(90deg, #4f46e5, #38bdf8) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 1.2rem !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #2563eb, #0ea5e9) !important;
+}
+
+/* =========================================
+   DOWNLOAD BUTTON FIX
+========================================= */
+
+.stDownloadButton button {
+    background: #1f2937 !important;
+    color: #ffffff !important;
+    border: 1px solid #3b82f6 !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.stDownloadButton button:hover {
+    background: #2563eb !important;
+    color: white !important;
+}
+
+/* =========================================
+   FILE UPLOADER FIX
+========================================= */
+
+/* Upload Box */
+section[data-testid="stFileUploader"] {
+    background: rgba(255,255,255,0.05) !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+}
+
+/* Upload Text */
+section[data-testid="stFileUploader"] * {
+    color: #ffffff !important;
+}
+
+/* Uploaded File Names */
+[data-testid="stFileUploaderFileName"] {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* =========================================
+   DATAFRAMES / TABLES
+========================================= */
+
+[data-testid="stDataFrame"] {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+table {
+    background-color: #111827 !important;
+    color: white !important;
+}
+
+thead tr th {
+    background-color: #1e293b !important;
+    color: #60a5fa !important;
+}
+
+/* =========================================
+   CARDS / CONTAINERS
+========================================= */
+
+.candidate-card {
+    background: rgba(255,255,255,0.06);
     padding: 20px;
     border-radius: 16px;
-    border: 1px solid #334155;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+    color: white !important;
 }
 
-[data-testid="stMetricLabel"] {
-    color: #cbd5e1 !important;
-    font-size: 18px !important;
+/* =========================================
+   SUCCESS / ERROR MESSAGES
+========================================= */
+
+.stSuccess {
+    background-color: rgba(34,197,94,0.2) !important;
+    color: #4ade80 !important;
+    border-radius: 10px !important;
 }
 
-[data-testid="stMetricValue"] {
-    color: #38bdf8 !important;
-    font-size: 38px !important;
-    font-weight: bold !important;
+.stError {
+    background-color: rgba(239,68,68,0.2) !important;
+    color: #f87171 !important;
+    border-radius: 10px !important;
+}
+
+/* =========================================
+   METRICS
+========================================= */
+
+[data-testid="metric-container"] {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================================
+   LIGHT MODE SUPPORT
+========================================= */
+
+@media (prefers-color-scheme: light) {
+
+    /* Main Background */
+    .stApp {
+        background: #f3f4f6 !important;
+        color: #111111 !important;
+    }
+
+    /* Global Text */
+    html, body, [class*="css"] {
+        color: #111111 !important;
+    }
+
+    /* Inputs */
+    .stTextInput input,
+    .stTextArea textarea,
+    .stNumberInput input,
+    .stSelectbox div,
+    .stMultiSelect div {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid #cbd5e1 !important;
+    }
+
+    /* Tables */
+    table {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    thead tr th {
+        background-color: #dbeafe !important;
+        color: black !important;
+    }
+
+    /* Download Button */
+    .stDownloadButton button {
+        background: #dbeafe !important;
+        color: #000000 !important;
+        border: 1px solid #2563eb !important;
+    }
+
+    .stDownloadButton button:hover {
+        background: #2563eb !important;
+        color: white !important;
+    }
+
+    /* File Upload */
+    section[data-testid="stFileUploader"] {
+        background: #ffffff !important;
+    }
+
+    section[data-testid="stFileUploader"] * {
+        color: #000000 !important;
+    }
+
+    [data-testid="stFileUploaderFileName"] {
+        color: #000000 !important;
+    }
+
+    /* Cards */
+    .candidate-card {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #d1d5db !important;
+    }
+
+    /* Metrics */
+    [data-testid="metric-container"] {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #d1d5db !important;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background: #e5e7eb !important;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: black !important;
+    }
 }
 
 </style>
 """, unsafe_allow_html=True)
-
-
 # =====================================================
 # DETECT DOMAIN
 # =====================================================
