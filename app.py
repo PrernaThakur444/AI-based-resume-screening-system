@@ -54,6 +54,9 @@ from scorer import (
 
 from ai_engine import ai_reason_selection
 
+from auth import init_db
+
+init_db()
 
 # =====================================================
 # PAGE CONFIG

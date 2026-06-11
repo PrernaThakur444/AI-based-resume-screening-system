@@ -126,6 +126,28 @@
 import sqlite3
 import hashlib
 
+def init_db():
+    conn = sqlite3.connect("users.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS candidates (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        email TEXT,
+        phone TEXT,
+        education TEXT,
+        experience REAL,
+        skills TEXT,
+        matched_skills TEXT,
+        total_score REAL,
+        result TEXT,
+        resume_path TEXT
+    )
+    """)
+
+    conn.commit()
+    conn.close()
 # =========================================
 # DATABASE CONNECTION
 # =========================================
